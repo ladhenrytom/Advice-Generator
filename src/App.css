@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  /* font-family: "Sofia", cursive; */
+  margin: 0;
+  padding: 0;
+  background: hsl(218, 23%, 16%);
+  color: hsl(193, 38%, 86%);
+}
+
+.App {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.header {
+  display: flex;
+  background: hsl(193, 38%, 86%);
+  /* justify-content: center; */
+  align-items: center;
+  padding: 24px;
+  word-wrap: break-word;
+}
+nav img {
+  width: 120px;
+  height: 70px;
+  object-fit: cover;
+  margin-right: 12px;
+  border-radius: 8px;
+}
+nav h1 {
+  font-size: 30px;
+  color: rgb(1, 1, 1);
+  font-weight: 900;
+  font-family: "Sofia", cursive;
+  text-transform: uppercase;
+  margin-top: 18px;
+  letter-spacing: 5px;
+}
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: hsl(217, 19%, 24%);
+  width: 470px;
+  margin: auto;
+  padding: 24px;
+  border-radius: 3px;
+}
+.title {
+  color: hsl(150, 100%, 66%);
+  font-size: 16px;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+.content {
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 30px 0;
+}
+.divider {
+  margin-bottom: 20px;
+}
+.btn--bg {
+  position: absolute;
+  top: 90%;
+  background: hsl(150, 100%, 66%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn--bg:hover {
+  box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+.attribution {
+  padding: 24px;
+  font-size: 14px;
+  text-align: center;
+  word-wrap: break-word;
+  width: 95%;
+  margin: 0 auto;
+}
+.attribution a {
+  text-decoration: underline;
+  color: hsl(193, 38%, 86%);
+  word-spacing: 5px;
+  margin: 0 8px;
+}
+
+@media screen and (max-width: 490px) {
+  nav img {
+    width: 80px;
+    height: 40px;
+  }
+  nav h1 {
+    font-size: 24px;
+  }
+  .main {
+    width: 100vw;
+  }
+}
